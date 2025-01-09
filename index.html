@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,112 +7,111 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-
 <body>
     <header class="header">
         <div class="header_left">
             <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="Logo LinkedIn">
             <div class="header_search">
                 <i class="material-icons"> search</i>
-                <input type="text" placeholder="">
+                <input type="text" placeholder="Pesquisar">
             </div>
         </div>
-        <div class="header_right">
+        <nav class="header_right">
             <div class="headerOption">
                 <i class="material-icons headerOption_icon">home</i>
                 <h3>Home</h3>
             </div>
             <div class="headerOption">
                 <i class="material-icons headerOption_icon">supervisor_account</i>
-                <h3>My Network</h3>
+                <h3>Rede</h3>
             </div>
             <div class="headerOption">
                 <i class="material-icons headerOption_icon">business_center</i>
-                <h3>Jobs</h3>
+                <h3>Vagas</h3>
             </div>
             <div class="headerOption">
                 <i class="material-icons headerOption_icon">chat</i>
-                <h3>Messages</h3>
+                <h3>Mensagens</h3>
             </div>
             <div class="headerOption">
                 <i class="material-icons headerOption_icon">notifications</i>
-                <h3>Notifications</h3>
+                <h3>Notificações</h3>
             </div>
             <div class="headerOption">
                 <i class="material-icons headerOption_icon">account_circle</i>
-                <h3>Me</h3>
+                <h3>Eu</h3>
             </div>
-        </div>
+        </nav>
     </header>
 
     <div class="body_main">
-        <div class="sidebar">
+        <aside class="sidebar">
             <div class="sidebar_top">
                 <img src="https://images.alphacoders.com/176/176123.jpg" alt="Background Profile">
                 <i class="material-icons sidebar_topAvatar"> account_circle</i>
                 <h2>Fulano</h2>
-                <h4>fulanodasilva@gmail.com</h4>
+                <h4>fulano@example.com</h4>
             </div>
             <div class="sidebar_stats">
                 <div class="sidebar_stat">
-                    <p>Who viwed you</p>
+                    <p>Quem viu seu perfil</p>
                     <p class="sidebar_statNumber">50.000</p>
                 </div>
                 <div class="sidebar_stat">
-                    <p>Views on posts</p>
+                    <p>Visualizações do post</p>
                     <p class="sidebar_statNumber">250.000</p>
                 </div>
             </div>
             <div class="sidebar_bottom">
-                <p>Recent</p>
+                <p>Recentes</p>
                 <div class="sidebar_recentItem">
                     <span class="sidebar_hash">#</span>
-                    <p>Hacking</p>
+                    <p>programação</p>
                 </div>
                 <div class="sidebar_recentItem">
                     <span class="sidebar_hash">#</span>
-                    <p>Back End</p>
+                    <p>desenvolvimentoweb</p>
                 </div>
                 <div class="sidebar_recentItem">
                     <span class="sidebar_hash">#</span>
-                    <p>Javascript</p>
+                    <p>javascript</p>
                 </div>
                 <div class="sidebar_recentItem">
                     <span class="sidebar_hash">#</span>
-                    <p>Lisp</p>
+                    <p>design</p>
                 </div>
                 <div class="sidebar_recentItem">
                     <span class="sidebar_hash">#</span>
-                    <p>Github</p>
+                    <p>desenvolvedor</p>
                 </div>
             </div>
-        </div>
+        </aside>
 
-        <div class="feed">
+        <main class="feed">
             <div class="feed_inputContainer">
                 <div class="feed_input">
                     <i class="material-icons">create</i>
                     <form id="post-form">
-                        <input type="text" id="post-input" placeholder="">
+                        <input type="text" id="post-input" placeholder="Iniciar uma publicação">
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
                 <div class="feed_inputOptions">
                     <div class="inputOption">
-                        <i style="color: rgb(0, 110, 255)" class="material-icons">insert_photo</i>
-                        <h4>Photo</h4>
+                        <i style="color: #70B5F9" class="material-icons">insert_photo</i>
+                        <h4>Foto</h4>
                     </div>
                     <div class="inputOption">
-                        <i style="color: rgb(239, 65, 21)" class="material-icons">subscriptions</i>
-                        <h4>Video</h4>
+                        <i style="color: #7FC15E" class="material-icons">subscriptions</i>
+                        <h4>Vídeo</h4>
                     </div>
                     <div class="inputOption">
-                        <i style="color: rgb(178, 188, 201)" class="material-icons">event_note</i>
-                        <h4>Event</h4>
+                        <i style="color: #E7A33E" class="material-icons">event_note</i>
+                        <h4>Evento</h4>
                     </div>
                     <div class="inputOption">
-                        <i style="color: rgb(19, 247, 11)" class="material-icons">calendar_view_day</i>
-                        <h4>Write Article</h4>
+                        <i style="color: #FC9295" class="material-icons">calendar_view_day</i>
+                        <h4>Escrever artigo</h4>
                     </div>
                 </div>
             </div>
@@ -121,11 +119,11 @@
             <div id="posts-container">
                 <!-- Posts serão inseridos aqui pelo JavaScript -->
             </div>
-        </div>
+        </main>
 
-        <div class="widgets">
+        <aside class="widgets">
             <div class="widgets_header">
-                <h2>Top Articles</h2>
+                <h2>Artigos em alta</h2>
                 <i class="material-icons">info</i>
             </div>
             <div class="widgets_article">
@@ -133,8 +131,8 @@
                     <i class="material-icons">fiber_manual_record</i>
                 </div>
                 <div class="widgets_articleRight">
-                    <h4>Net</h4>
-                    <p>Top News - 100k readers</p>
+                    <h4>Tecnologia</h4>
+                    <p>Notícias em destaque - 100k leitores</p>
                 </div>
             </div>
             <div class="widgets_article">
@@ -142,8 +140,8 @@
                     <i class="material-icons">fiber_manual_record</i>
                 </div>
                 <div class="widgets_articleRight">
-                    <h4>Coding</h4>
-                    <p>Top News - 80k readers</p>
+                    <h4>Programação</h4>
+                    <p>Notícias em destaque - 80k leitores</p>
                 </div>
             </div>
             <div class="widgets_article">
@@ -152,13 +150,13 @@
                 </div>
                 <div class="widgets_articleRight">
                     <h4>Design UX/UI</h4>
-                    <p>Top News - 75k readers</p>
+                    <p>Notícias em destaque - 75k leitores</p>
                 </div>
             </div>
-        </div>
+        </aside>
     </div>
 
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>
+
